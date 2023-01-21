@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+  <title>TechnoPremier</title>
+  <link href="/assets/css/app.css" rel="stylesheet"/>
+  <script defer src="/assets/js/app.js"></script>
+</head>
+<body>
+<div>
+  <header class="header">
+    <div class="header__header-line">
+      <div class="header__upper container">
+        <div class="header__block-img">
+
+          <a  href="/index.html"><img width="175" height="60" src="/images/logo.png" class="header__logo" loading="lazy" alt="Иконка - logo"></a>
+
+          <svg class="header__liugong">
+            <use href="/assets/sprite.svg#liugong"></use>
+          </svg>
+
+          <svg class="header__liugong-mob">
+            <use href="/assets/sprite.svg#liugong-mob"></use>
+          </svg>
+        </div>
+
+        <div class="header__contact">
+          <div class="header__number">
+            <span class="header__help">любая помощь с техникой</span>
+            <a href="tel:8996778999100" class="header__number-tel">+996 778 999100</a>
+          </div>
+
+          <div class="header__callback" data-fancybox data-src="#modal">
+            <a href="/" class="header__chime">
+              <svg class="header__phone">
+                <use href="/assets/sprite.svg#phone"></use>
+              </svg>
+              <div class="header__callback-txt">ЗАКАЗАТЬ
+                ОБРАТНЫЙ ЗВОНОК
+              </div>
+            </a>
+          </div>
+
+          <a href="/" class="header__icon">
+            <svg class="header__maps-icon">
+              <use href="/assets/sprite.svg#maps"></use>
+            </svg>
+          </a>
+
+          <a href="/" class="header__icon">
+            <svg class="header__kyrgyzstan-icon">
+              <use href="/assets/sprite.svg#kyrgyzstan"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a class="js-mobile-menu-trigger">
+      <svg class="header__icon-menu">
+        <use href="/assets/sprite.svg#icon-menu"></use>
+      </svg>
+    </a>
+
+    <div class="js-mobile-menu">
+      <ul>
+        <li><a href="/">Техника</a></li>
+        <li><a href="/service.html">Сервис</a></li>
+        <li><a href="/">Запчасти</a></li>
+        <li><a href="/leasing.html">Лизинг</a></li>
+        <li><a href="/index.html#about-company">О компании</a></li>
+        <li><a href="/index.html#basic">Основные виды работ</a></li>
+        <li><a href="/index.html#how-we-work">Как мы работаем</a></li>
+        <li><a href="/leasing.html#mode">Аренда техники</a></li>
+        <li><a href="/leasing.html#leasing-approval">Одобрение лизинга</a></li>
+      </ul>
+    </div>
+
+    <nav class="header__lower container">
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="/" class="header__menu-txt-technic">ТЕХНИКА</a></li>
+        <li class="header__menu-item"><a href="/service.html" class="header__menu-txt">СЕРВИС</a></li>
+        <li class="header__menu-item"><a href="/" class="header__menu-txt">ЗАПЧАСТИ</a></li>
+        <li class="header__menu-item"><a href="/leasing.html" class="header__menu-txt">ЛИЗИНГ</a></li>
+        <li class="header__menu-item"><a href="/" class="header__menu-txt">О КОМПАНИИ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="service">
+      <nav class="service__auth container">
+        <div class="service__img-wrapper-mob">
+          <img width="734" height="641" src="/images/map-kyrg.png" class="service__map-kyrg-mob"
+               loading="lazy" alt="карта Кыргызстана">
+        </div>
+        <div class="service__text">
+          <span class="service__title">Авторизованный</span>
+          <span class="service__title-black">сервис LiuGong по Кыргызстану</span>
+          <h2 class="service__subtitle">дорожно-строительной, карьерной и складской техники</h2>
+        </div>
+
+        <div class="service__img-wrapper">
+          <img width="734" height="641" src="/images/map-kyrg.png" class="service__map-kyrg"
+               loading="lazy" alt="карта Кыргызстана">
+        </div>
+      </nav>
+
+      <nav class="service-yellow">
+        <div class="service-yellow__row container">
+
+          <div class="service-yellow__column">
+            <svg class="service-yellow__icon-rocket">
+              <use href="/assets/sprite.svg#rocket"></use>
+            </svg>
+            <p class="service-yellow__text-rocket">Оперативно отправим&#160; бригаду механиков&nbsp;&nbsp;&nbsp; на оборудованном авто</p>
+          </div>
+
+          <div class="service-yellow__column">
+            <svg class="service-yellow__icon-car">
+              <use href="/assets/sprite.svg#car"></use>
+            </svg>
+            <p class="service-yellow__text-car">Сложные ремонтные работы в нашем оборудованном сервисе в Бишкеке</p>
+          </div>
+
+          <div class="service-yellow__column">
+            <svg class="service-yellow__icon-repair">
+              <use href="/assets/sprite.svg#repair"></use>
+            </svg>
+            <p class="service-yellow__text-repair">Выезд специалистов в любую точку Кыргызстана</p>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="type-work" id="basic">
+      <div class="type-work__content container">
+        <h2 class="type-work__title">Основные виды работ, которые мы оказываем</h2>
+
+        <div class="type-work__aside">
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#drive-belt"></use>
+            </svg>
+            <h3 class="type-work__desc">Диагностика ДВС</h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#engine"></use>
+            </svg>
+            <h3 class="type-work__desc">Капитальный ремонт ДВС</h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#tools"></use>
+            </svg>
+            <h3 class="type-work__desc">Ремонт головок блока цилиндров</h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#piston"></use>
+            </svg>
+            <h3 class="type-work__desc">Замена поршневой группы </h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#turbo-compressor"></use>
+            </svg>
+            <h3 class="type-work__desc">Замена турбо-компрессоров </h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#oil"></use>
+            </svg>
+            <h3 class="type-work__desc">Замеры давления масла в гидросистеме</h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#oil-pressure"></use>
+            </svg>
+            <h3 class="type-work__desc">Замеры давления масла в двигателе</h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#hydraulic-pump"></use>
+            </svg>
+            <h3 class="type-work__desc">Замена гидронасосов</h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#technical-service"></use>
+            </svg>
+            <h3 class="type-work__desc">Полное техническое обслуживание </h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#power"></use>
+            </svg>
+            <h3 class="type-work__desc">Работы по&nbsp;электрике</h3>
+          </div>
+
+          <div class="type-work__box">
+            <svg class="type-work__icon">
+              <use href="/assets/sprite.svg#additional-equipment"></use>
+            </svg>
+            <h3 class="type-work__desc">Установка дополнительного оборудования</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-work" id="how-we-work">
+      <div class="how-work__block container">
+        <h2 class="how-work__title">Как мы работаем</h2>
+        <div class="how-work__img-wrapper">
+          <img width="548" height="304" src="/images/car-techno-premier.png" class="how-work__car-techno-premier"
+               loading="lazy" alt="Иконка - car-techno-premier">
+        </div>
+      </div>
+
+      <ol class="how-work__list container">
+        <li class="how-work__box">
+          <div class="how-work__number">1</div>
+          <span class="how-work__desc">Вы оставляете заявку в мессенджерах или на сайте</span>
+        </li>
+
+        <li class="how-work__box">
+          <div class="how-work__number">2</div>
+          <span
+            class="how-work__desc">Наш диспетчер оперативно перезванивает вам и передаёт заявку в сервисный отдел</span>
+        </li>
+
+        <li class="how-work__box">
+          <div class="how-work__number">3</div>
+          <span class="how-work__desc">Выясняем, где удобнее провести ремонт — в Бишкеке или у клиента на месте</span>  <!--как перенести-->
+        </li>
+
+        <li class="how-work__box">
+          <div class="how-work__number">4</div>
+          <span class="how-work__desc">Клиент подписывает договор. Приступаем к полноценному ремонту</span>
+        </li>
+
+        <li class="how-work__box">
+          <div class="how-work__number">5</div>
+          <span class="how-work__desc">После осмотра составляем акт дефектовки, где прописываем участки для ремонта</span>
+        </li>
+
+        <li class="how-work__box">
+          <div class="how-work__number">6</div>
+          <span class="how-work__desc">Бригада проводит дефектовку и выявляет проблемные зоны в технике</span>
+        </li>
+      </ol>
+
+      <div class="how-work__box-lower container">
+        <span class="how-work__txt">Клиент получает отремонтированную технику</span>
+      </div>
+    </section>
+
+    <section class="proposal">
+      <div class="proposal__block container">
+        <div class="proposal__img-wrapper">
+          <img width="291" height="439" src="/images/human.png" class="proposal__human" loading="lazy"
+               alt="Иконка - logo">
+        </div>
+        <ul class="proposal__txt">
+          <h3 class="proposal__title">Cобственный магазин запасных частей LiuGong</h3>
+          <li class="proposal__desc">Более 400 видов запчастей всегда в наличии</li>
+          <li class="proposal__desc">Возможна срочная доставка запчастей с завода производителя</li>
+          <a href="/" class="proposal__btn"><span class="proposal__btn-txt">Перейти в магазин запчастей</span></a>
+        </ul>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="banner__content container">
+      <span class="banner__txt"><strong>Оставьте заявку</strong> и мы перезвоним Вам через <span
+        class="banner__five-min"><strong>5 минут</strong></span></span>
+        <a class="banner__btn" data-fancybox data-src="#modal"><span class="banner__btn-txt">Оставить заявку</span></a>
+      </div>
+    </section>
+
+    <form class="modal-content" id="modal">
+      <h3 class="modal-content__title">Оставьте заявку и мы свяжемся с вами</h3>
+      <input class="modal-content__input" placeholder="Имя" required name="имя">
+      <input class="modal-content__input" placeholder="Телефон" minlength="11" maxlength="12"
+             value="+7" type="tel" required name="номер телефона">
+      <a href="/" class="modal-content__btn"><span class="banner__btn-txt">Отправить заявку</span></a>
+    </form>
+
+    <section class="team">
+
+      <span class="team__title">Качественный результат<span class="team__title-min">обеспечивает наша команда механиков</span></span>
+
+      <div class="swiper swiper-service container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-images">
+              <img src="/images/swiper-dmitriy.jpg" class="slider-images__picture" width="288" height="460" loading="lazy"
+                   alt="swiper-dmitriy"/>
+              <a href="#info">
+                <svg class="slider-images__swiper-info-icon">
+                  <use href="/assets/sprite.svg#swiper-info"></use>
+                </svg>
+              </a>
+              <div class="slider-images__content">
+                <span class="slider-images__name">Дмитрий Коржов</span>
+                <span class="slider-images__post">Старший инженер-механик</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-images">
+              <img src="/images/swiper-anton.jpg" class="slider-images__picture" width="288" height="460" loading="lazy"
+                   alt="swiper-anton"/>
+              <a href="#info">
+                <svg class="slider-images__swiper-info-icon">
+                  <use href="/assets/sprite.svg#swiper-info"></use>
+                </svg>
+              </a>
+              <div class="slider-images__content">
+                <span class="slider-images__name">Антон Глухов</span>
+                <span class="slider-images__post">Инженер-механик</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-images">
+              <img src="/images/swiper-mihail.jpg" class="slider-images__picture" width="288" height="460" loading="lazy"
+                   alt="swiper-anton"/>
+              <a href="#info">
+                <svg class="slider-images__swiper-info-icon">
+                  <use href="/assets/sprite.svg#swiper-info"></use>
+                </svg>
+              </a>
+              <div class="slider-images__content">
+                <span class="slider-images__name">Михаил</span>
+                <span class="slider-images__post">Инженер-механик</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="slider-images">
+              <img src="/images/swiper-azamat.jpg" class="slider-images__picture" width="288" height="460" loading="lazy"
+                   alt="swiper-azamat"/>
+              <a href="#info">
+                <svg class="slider-images__swiper-info-icon">
+                  <use href="/assets/sprite.svg#swiper-info"></use>
+                </svg>
+              </a>
+              <div class="slider-images__content">
+                <span class="slider-images__name">Азамат Токтаналы</span>
+                <span class="slider-images__post">Механик</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-images">
+              <img src="/images/swiper-nurdanat.jpg" class="slider-images__picture" width="288" height="460"
+                   loading="lazy" alt="swiper-nurdanat"/>
+              <a href="#info">
+                <svg class="slider-images__swiper-info-icon">
+                  <use href="/assets/sprite.svg#swiper-info"></use>
+                </svg>
+              </a>
+              <div class="slider-images__content">
+                <span class="slider-images__name">Нурданат Толонов</span>
+                <span class="slider-images__post">Механик</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="warranty">
+      <div class="warranty__content container">
+        <div class="warranty__img-wrapper">
+          <img src="/images/logotip-LiuGong.png" class="warranty__img" width="490" height="320" loading="lazy"
+               alt="logotip-LiuGong"/>
+          <img src="/images/logotip-LiuGong-mob.png" class="warranty__img-mob" width="168" height="166" loading="lazy"
+               alt="logotip-LiuGong-mob"/>
+        </div>
+
+        <div class="warranty__txt" id="about-company">
+          <span class="warranty__title">Авторизованный сервис производителя техники LiuGong</span>
+          <span class="warranty__subtitle">Осуществляем ремонт техники и замену запчастей по гарантии, плановое техническое обслуживание.</span>
+          <span class="warranty__subtitle">Своевременное и квалифицированное обслуживание техники – гарантия долговечности техники и отсутствия простоев.</span>
+          <span
+            class="warranty__subtitle">На проведенные работы Techno Premier предоставляет дополнительную гарантию.</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__contact container">
+        <span class="footer__text">Контакты</span>
+        <a class="footer__number" href="tel:+996778999100">+996 778 999 100</a>
+        <span class="footer__address">Кыргызстан, г. Бишкек, Матросова, 1а ст4</span>
+        <a class="footer__callback" href="#callback" data-fancybox data-src="#modal">вам перезвонить?</a>
+      </div>
+    </footer>
+  </main>
+</div>
+</body>
+</html>

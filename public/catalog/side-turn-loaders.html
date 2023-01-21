@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+  <title>TechnoPremier</title>
+  <link href="/assets/css/app.css" rel="stylesheet"/>
+  <script defer src="/assets/js/app.js"></script>
+</head>
+<body>
+<div>
+  <header class="header">
+    <div class="header__header-line">
+      <div class="header__upper container">
+        <div class="header__block-img">
+
+          <a  href="/index.html"><img width="175" height="60" src="/images/logo.png" class="header__logo" loading="lazy" alt="Иконка - logo"></a>
+
+          <svg class="header__liugong">
+            <use href="/assets/sprite.svg#liugong"></use>
+          </svg>
+
+          <svg class="header__liugong-mob">
+            <use href="/assets/sprite.svg#liugong-mob"></use>
+          </svg>
+        </div>
+
+        <div class="header__contact">
+          <div class="header__number">
+            <span class="header__help">любая помощь с техникой</span>
+            <a href="tel:8996778999100" class="header__number-tel">+996 778 999100</a>
+          </div>
+
+          <div class="header__callback" data-fancybox data-src="#modal">
+            <a href="/" class="header__chime">
+              <svg class="header__phone">
+                <use href="/assets/sprite.svg#phone"></use>
+              </svg>
+              <div class="header__callback-txt">ЗАКАЗАТЬ
+                ОБРАТНЫЙ ЗВОНОК
+              </div>
+            </a>
+          </div>
+
+          <a href="/" class="header__icon">
+            <svg class="header__maps-icon">
+              <use href="/assets/sprite.svg#maps"></use>
+            </svg>
+          </a>
+
+          <a href="/" class="header__icon">
+            <svg class="header__kyrgyzstan-icon">
+              <use href="/assets/sprite.svg#kyrgyzstan"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a class="js-mobile-menu-trigger">
+      <svg class="header__icon-menu">
+        <use href="/assets/sprite.svg#icon-menu"></use>
+      </svg>
+    </a>
+
+    <div class="js-mobile-menu">
+      <ul>
+        <li><a href="/">Техника</a></li>
+        <li><a href="/service.html">Сервис</a></li>
+        <li><a href="/">Запчасти</a></li>
+        <li><a href="/leasing.html">Лизинг</a></li>
+        <li><a href="/index.html#about-company">О компании</a></li>
+        <li><a href="/index.html#basic">Основные виды работ</a></li>
+        <li><a href="/index.html#how-we-work">Как мы работаем</a></li>
+        <li><a href="/leasing.html#mode">Аренда техники</a></li>
+        <li><a href="/leasing.html#leasing-approval">Одобрение лизинга</a></li>
+      </ul>
+    </div>
+
+    <nav class="header__lower container">
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="/" class="header__menu-txt-technic">ТЕХНИКА</a></li>
+        <li class="header__menu-item"><a href="/service.html" class="header__menu-txt">СЕРВИС</a></li>
+        <li class="header__menu-item"><a href="/" class="header__menu-txt">ЗАПЧАСТИ</a></li>
+        <li class="header__menu-item"><a href="/leasing.html" class="header__menu-txt">ЛИЗИНГ</a></li>
+        <li class="header__menu-item"><a href="/" class="header__menu-txt">О КОМПАНИИ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="navigation">
+      <div class="navigation__wrapper-content container">
+        <a href="/index.html">Главная</a>
+        <span>&#8594</span>
+        <a href="/catalog.html">Каталог</a>
+        <span>&#8594</span>
+        <a href="/">Погрузчики с бортовым поворотом</a>
+      </div>
+    </section>
+
+    <section class="rent-excavators" id="mode">
+      <div class="rent-excavators__wrapper-title">
+        <h2 class="rent-excavators__title">Погрузчики с бортовым поворотом</h2>
+      </div>
+      <div class="rent-excavators__filter container" id="tabList" aria-label="Sample Tabs">
+        <button class="rent-excavators__full-filter rent-excavators__all-filter" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">Все</button>
+        <button class="rent-excavators__wheeled-filter rent-excavators__all-filter" role="tab" aria-selected="false"
+                aria-controls="panel-2" id="tab-2" tabindex="-1">Колесные</button>
+        <button class="rent-excavators__small-filter rent-excavators__all-filter" role="tab" aria-selected="false"
+                aria-controls="panel-3" id="tab-3" tabindex="-1">Малые</button>
+        <button class="rent-excavators__medium-filter rent-excavators__all-filter" role="tab" aria-selected="false"
+                aria-controls="panel-4" id="tab-4" tabindex="-1">Средние</button>
+        <button class="rent-excavators__heavy-filter rent-excavators__all-filter" role="tab" aria-selected="false"
+                aria-controls="panel-5" id="tab-5" tabindex="-1">Тяжелые</button>
+      </div>
+
+      <div class="rent-excavators__content container">
+        <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+          <div class="rent-excavators__aside container">
+            <a href="/" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/crawler-excavator.png"
+                     class="rent-excavators__img" loading="lazy" alt="crawler-excavator" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">952E</span>
+                <ul class="rent-excavators__parameter">
+
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">Cummins QSM11</span>
+                  </li>
+
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Полная мощность:</span>
+                    <span class="rent-excavators__parameter-data">280 кВт (381 л.с.)</span>
+                  </li>
+
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Глубина копания:</span>
+                    <span class="rent-excavators__parameter-data">6521 мм</span>
+                  </li>
+
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,2 м3</span>
+                  </li>
+
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатацаионная масса:</span>
+                    <span class="rent-excavators__parameter-data">50 000 кг</span>
+                  </li>
+
+                </ul>
+              </div>
+            </a>
+            <a href="/card-transport/856H.html" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/front-loader.png"
+                     class="rent-excavators__img" loading="lazy" alt="front-loader" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">856H</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">Cummins 6LTAA9.3 </span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Полная мощность:</span>
+                    <span class="rent-excavators__parameter-data">162 кВт (220 л. с.) </span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Глубина копания:</span>
+                    <span class="rent-excavators__parameter-data">6521 мм</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,0 м³</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатацаионная масса:</span>
+                    <span class="rent-excavators__parameter-data">18 500 кг</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="/" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/escalator-loader.png"
+                     class="rent-excavators__img" loading="lazy" alt="escalator-loader" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">777А</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">Weichai WP4G95E221</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Полная мощность:</span>
+                    <span class="rent-excavators__parameter-data">70 кВт (95 л.с.)</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Максимальная скорость:</span>
+                    <span class="rent-excavators__parameter-data">36 км/час</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатационная масса:</span>
+                    <span class="rent-excavators__parameter-data">8400 кг</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,0 м³</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="/" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/ground-vibrating-roller.png"
+                     class="rent-excavators__img" loading="lazy" alt="ground-vibrating-roller" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">6116</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">Shangchai SC4H140.2G2</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Полная мощность:</span>
+                    <span class="rent-excavators__parameter-data">103 кВт (140 л.с.)</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Рабочая ширина:</span>
+                    <span class="rent-excavators__parameter-data">2 130 мм</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,2 м3</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатацаионная масса:</span>
+                    <span class="rent-excavators__parameter-data">16 000 кг</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="/" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/bulldozer.png"
+                     class="rent-excavators__img" loading="lazy" alt="bulldozer" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">B320</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">Cummins NT855C360S20</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Полная мощность:</span>
+                    <span class="rent-excavators__parameter-data">257 кВт (349 л. с.) </span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Объем отвала:</span>
+                    <span class="rent-excavators__parameter-data">10,4 м³</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,2 м3</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатацаионная масса:</span>
+                    <span class="rent-excavators__parameter-data">34 000 кг</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="/" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/grader.png"
+                     class="rent-excavators__img" loading="lazy" alt="grader" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">4215 AWD</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">4215 AWD</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Номинальная мощность:</span>
+                    <span class="rent-excavators__parameter-data">160кВт(215 л.с.)</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Максимальная скорость::</span>
+                    <span class="rent-excavators__parameter-data">42 км/час</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,2 м3</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатацаионная масса:</span>
+                    <span class="rent-excavators__parameter-data">18 700 кг</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+          <div class="rent-excavators__aside container">
+            <a href="/card-transport/856H.html" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/front-loader.png"
+                     class="rent-excavators__img" loading="lazy" alt="front-loader" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">856H</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">Cummins 6LTAA9.3 </span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Полная мощность:</span>
+                    <span class="rent-excavators__parameter-data">162 кВт (220 л. с.) </span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Глубина копания:</span>
+                    <span class="rent-excavators__parameter-data">6521 мм</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,0 м³</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатацаионная масса:</span>
+                    <span class="rent-excavators__parameter-data">18 500 кг</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
+          <div class="rent-excavators__aside container">
+            <a href="/" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/escalator-loader.png"
+                     class="rent-excavators__img" loading="lazy" alt="escalator-loader" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">777А</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">Weichai WP4G95E221</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Полная мощность:</span>
+                    <span class="rent-excavators__parameter-data">70 кВт (95 л.с.)</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Максимальная скорость:</span>
+                    <span class="rent-excavators__parameter-data">36 км/час</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатационная масса:</span>
+                    <span class="rent-excavators__parameter-data">8400 кг</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,0 м³</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="panel-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4" hidden>
+          <div class="rent-excavators__aside container">
+            <a href="/" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/ground-vibrating-roller.png"
+                     class="rent-excavators__img" loading="lazy" alt="ground-vibrating-roller" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">6116</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">Shangchai SC4H140.2G2</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Полная мощность:</span>
+                    <span class="rent-excavators__parameter-data">103 кВт (140 л.с.)</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Рабочая ширина:</span>
+                    <span class="rent-excavators__parameter-data">2 130 мм</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,2 м3</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатацаионная масса:</span>
+                    <span class="rent-excavators__parameter-data">16 000 кг</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div id="panel-5" role="tabpanel" tabindex="0" aria-labelledby="tab-5" hidden>
+          <div class="rent-excavators__aside container">
+            <a href="/" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/bulldozer.png"
+                     class="rent-excavators__img" loading="lazy" alt="bulldozer" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">B320</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">Cummins NT855C360S20</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Полная мощность:</span>
+                    <span class="rent-excavators__parameter-data">257 кВт (349 л. с.) </span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Объем отвала:</span>
+                    <span class="rent-excavators__parameter-data">10,4 м³</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,2 м3</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатацаионная масса:</span>
+                    <span class="rent-excavators__parameter-data">34 000 кг</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+            <a href="/" class="rent-excavators__box">
+              <div class="rent-excavators__img-wrapper">
+                <img width="360" height="247" src="/images/grader.png"
+                     class="rent-excavators__img" loading="lazy" alt="grader" />
+              </div>
+
+              <div class="rent-excavators__text container">
+                <span class="rent-excavators__number">4215 AWD</span>
+                <ul class="rent-excavators__parameter">
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Двигатель:</span>
+                    <span class="rent-excavators__parameter-data">4215 AWD</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Номинальная мощность:</span>
+                    <span class="rent-excavators__parameter-data">160кВт(215 л.с.)</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Максимальная скорость::</span>
+                    <span class="rent-excavators__parameter-data">42 км/час</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Вместимость ковша:</span>
+                    <span class="rent-excavators__parameter-data">3,2 м3</span>
+                  </li>
+                  <li class="rent-excavators__parameter-block">
+                    <span class="rent-excavators__parameter-data">Эксплуатацаионная масса:</span>
+                    <span class="rent-excavators__parameter-data">18 700 кг</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <form class="modal-content" id="modal">
+      <h3 class="modal-content__title">Оставьте заявку и мы свяжемся с вами</h3>
+      <input class="modal-content__input" placeholder="Имя" required name="имя">
+      <input class="modal-content__input" placeholder="Телефон" minlength="11" maxlength="12"
+             value="+7" type="tel" required name="номер телефона">
+      <a href="/" class="modal-content__btn"><span class="banner__btn-txt">Отправить заявку</span></a>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__contact container">
+      <span class="footer__text">Контакты</span>
+      <a class="footer__number" href="tel:+996778999100">+996 778 999 100</a>
+      <span class="footer__address">Кыргызстан, г. Бишкек, Матросова, 1а ст4</span>
+      <a class="footer__callback" href="#callback" data-fancybox data-src="#modal">вам перезвонить?</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

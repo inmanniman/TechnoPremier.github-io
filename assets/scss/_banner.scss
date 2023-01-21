@@ -1,0 +1,152 @@
+.banner {
+  width: 100%;
+  background: url("~/images/background-banner.jpg") no-repeat center;
+  background-size: 100% 100%;
+  margin-bottom: 80px;
+
+  &__content {
+    display: flex;
+    gap: 65px;
+    padding: 88px 0 80px 0;
+  }
+
+  &__txt {
+    max-width: 502px;
+    width: 100%;
+    font-size: 32px;
+    margin-left: 100px;
+    line-height: 31px;
+  }
+
+  &__five-min {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      background: url("~/images/banner-line.png") no-repeat center;
+      display: block;
+      width: 195px;
+      height: 29px;
+      left: -48px;
+      top: 39px;
+      content: '';
+    }
+  }
+
+  &__btn {
+    position: relative;
+    top: -3px;
+    left: 97px;
+    background-color: #fff;
+    padding: 20px 35px;
+    font-weight: 500;
+    font-size: 24px;
+    border: none;
+    border-radius: 56px;
+    cursor: pointer;
+
+    &:hover {
+      background: #f2f2f2;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    &__content {
+      gap: 0;
+    }
+
+    &__txt {
+      margin-left: -100px;
+    }
+
+    &__btn {
+      left: 15px;
+    }
+  }
+
+  @media screen and (max-width: 885px) {
+    &__txt {
+      margin-left: 0px;
+    }
+  }
+
+  @media screen and (max-width: 808px) {
+    &__content {
+      flex-direction: column;
+      padding: 50px 0 80px 29px;
+    }
+
+    &__btn {
+      left: 15px;
+      margin: 86px auto 0;
+    }
+  }
+
+  @media screen and (max-width: 558px) {
+    &__five-min {
+      &:after {
+        left: -108px;
+        top: 39px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    &__five-min {
+      &:after {
+        left: -390px;
+        top: 72px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    &__five-min {
+      &:after {
+        left: 0px;
+        top: 42px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 348px) {
+    &__five-min {
+      &:after {
+        left: -100px;
+        top: 67px;
+      }
+    }
+
+    &__content {
+      margin-right: 29px;
+    }
+
+    &__btn {
+      left: 0;
+      padding: 20px 23px;
+    }
+  }
+
+
+  @media screen and (max-width: 320px) {
+    margin-bottom: 54px;
+    &__five-min {
+      &:after {
+        width: 165px;
+        height: 25px;
+        left: -2px;
+        top: 46px;
+      }
+    }
+    &__btn {
+      left: 3px;
+      margin-top: 88px;
+      padding: 20px 32px;
+    }
+
+    &__content {
+      padding-bottom: 40px;
+    }
+  }
+}
+

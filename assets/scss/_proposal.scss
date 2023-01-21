@@ -1,0 +1,192 @@
+.proposal {
+  width: 100%;
+  padding: 198px 0 127px 0;
+
+  &__block {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F2F1F5;
+    border-radius: 32px;
+    background: url("~/images/background-proposal.jpg") no-repeat center;
+    background-size: 100% 100%;
+    max-width: 1160px;
+    left: 6px;
+  }
+
+  &__img-wrapper {
+    justify-content: center;
+  }
+
+  &__human {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 61px;
+  }
+
+  &__txt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    padding: 63px 0 55px;
+    left: -19px;
+  }
+
+  &__title {
+    width: 90%;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0;
+  }
+
+  &__desc {
+    margin: 8px 0 0 8px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #828282;
+    list-style-type: none;
+
+    &::before {
+      content:  "-";
+      position: relative;
+      left:     -5px;
+    }
+
+    &:last-of-type {
+      margin-top: 0;
+      width: 497px;
+    }
+  }
+
+  &__btn {
+    background: #D80027;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFF;
+    border: none;
+    border-radius: 66px;
+    margin-top: 31px;
+    padding: 17px 27px 18px;
+    cursor: pointer;
+
+    &:hover {
+      background: #ff0f3b;
+    }
+  }
+
+  @media screen and (max-width: 1240px) {
+    &__block {
+      margin: auto 16px;
+    }
+
+    &__btn {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 924px) {
+
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__desc {
+      width: 90%;
+      font-weight: 400;
+      font-size: 18px;
+      color: #828282;
+      &:last-of-type {
+        width: 90%;
+      }
+    }
+
+    &__btn {
+      font-size: 16px;
+    }
+
+    &__human {
+      left: 16px;
+    }
+  }
+
+
+  @media screen and (max-width: 662px) {
+  &__btn {
+    padding: 17px 7px 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  &__block {
+    gap: 50px;
+  }
+
+  &__btn {
+    font-size: 15px;
+  }
+}
+  @media screen and (max-width: 640px) {
+    padding-top: 63px;
+
+    &__block {
+      display: block;
+      background-image: none;
+      background-color: #F2F1F5;
+      border-radius: 16px;
+      padding: 0;
+    }
+
+    &__img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 223px;
+      background: url("~/images/background-proposal-mob.png") no-repeat center;
+      background-size: 100% 100%;
+      text-align: center;
+    }
+
+    &__human {
+      position: relative;
+      max-width: 175px;
+      left: 0;
+      bottom: 41px;
+    }
+
+    &__txt {
+      margin: 33px auto 0 17px;
+      padding: 0 0 38px 0;
+      left: 0;
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 1px;
+    }
+
+    &__desc {
+      font-size: 16px;
+      line-height: 19px;
+      margin-left: 5px;
+
+      &:last-of-type {
+        width: 100%;
+      }
+    }
+
+    &__btn {
+      margin-top: 33px;
+      padding: 17px 18px 18px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    padding-bottom: 36px;
+    &__block {
+      margin: auto 22px auto 10px;
+    }
+  }
+}

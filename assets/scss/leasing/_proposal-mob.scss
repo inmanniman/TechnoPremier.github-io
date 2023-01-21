@@ -1,0 +1,55 @@
+.proposal-second {
+  padding: 129px 0 130px 0;
+
+
+  &__block {
+    background: url("~/images/background-proposal-second.png") no-repeat center;
+  }
+
+  &__txt {
+    padding: 103px 0 81px;
+  }
+
+  &__desc {
+    &:last-of-type {
+      margin: 8px 0 0 0;
+    }
+
+    &::before {
+      content: "";
+    }
+  }
+
+  &__btn {
+    margin-top: 24px;
+    padding: 17px 32px 18px;
+  }
+
+  &__human-second {
+    left: 37px;
+  }
+
+  @media screen and (max-width: 924px) {
+    &__block {
+      gap: 105px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    &__block {
+      background-image: none;
+      background-color: #F2F1F5;;
+    }
+
+    &__txt {
+      margin-top: 33px;
+      padding: 0 0 37px 0;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    &__human-second {
+      left: 0;
+    }
+  }
+}

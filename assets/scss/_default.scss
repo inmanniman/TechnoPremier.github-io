@@ -1,0 +1,26 @@
+body, html {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background: white;
+
+  a {
+    text-decoration: none;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.inp {
+  height: 67px;
+  background: #fff;
+  border-radius: 7px;
+  border: 0;
+  font-size: 20px;
+  text-indent: 32px;
+
+  &::placeholder {
+    color: rgba(126, 181, 166, 0.4);
+  }
+}

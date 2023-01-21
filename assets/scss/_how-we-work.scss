@@ -1,0 +1,463 @@
+.how-work {
+  width: 100%;
+  background-color: #F2F1F5;
+  padding-bottom: 133px;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    height: 229px;
+  }
+
+  &__title {
+    padding-top: 49px;
+    width: 50%;
+    font-weight: 300;
+    font-size: 56px;
+  }
+
+  &__img-wrapper {
+    width: 50%;
+    text-align: end;
+  }
+
+  &__car-techno-premier {
+    position: relative;
+    max-width: 481px;
+    width: 100%;
+    height: auto;
+    right: -14px;
+    top: -89px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    gap: 40px;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 40px;
+    padding-left: 0;
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 16px;
+    width: 360px;
+    height: 161px;
+
+    &:nth-child(1) > span {
+      max-width: 202px;
+      max-height: 66px;
+    }
+    &:nth-child(6) > span {
+      max-width: 279px;
+    }
+
+
+    &:nth-child(3),
+    &:nth-child(6) {
+
+      &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -35px;
+        display: block;
+        width: 31px;
+        height: 31px;
+        margin: auto;
+        background: url('~/images/right.png') center center no-repeat;
+        transform: rotate(90deg);
+        content: '';
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+
+      &::after {
+        position: absolute;
+        right: -36px;
+        bottom: 0;
+        top: 15px;
+        display: block;
+        width: 31px;
+        height: 31px;
+        margin: auto;
+        background: url('~/images/right.png') center center no-repeat;
+        content: '';
+      }
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+
+      &::after {
+        position: absolute;
+        top: 2px;
+        left: -36px;
+        bottom: 0;
+        display: block;
+        width: 31px;
+        height: 31px;
+        margin: auto;
+        background: url('~/images/right.png') center center no-repeat;
+        transform: rotate(180deg);
+        content: '';
+      }
+    }
+
+    &:nth-child(4) {
+      grid-column-start: 3;
+      grid-row-start: 2;
+    }
+
+    &:nth-child(5) {
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    &:nth-child(6) {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+  }
+
+  &__box-lower {
+    max-width: 1160px;
+    width: 90%;
+    font-weight: 400;
+    font-size: 36px;
+    color: #495053;
+    background: #FFFFFF;
+    border-radius: 16px;
+    text-align: center;
+    padding: 59px 0 58px 0;
+    position: relative;
+    left: 5px;
+    box-shadow: 0px 100px 50px rgba(149, 145, 165, 0.07), 0px 41.7776px 33.4221px
+    rgba(149, 145, 165, 0.0503198), 0px 22.3363px 17.869px
+    rgba(149, 145, 165, 0.0417275), 0px 12.5216px 10.0172px
+    rgba(149, 145, 165, 0.035), 0px 6.6501px 5.32008px
+    rgba(149, 145, 165, 0.0282725), 0px 2.76726px 2.21381px
+    rgba(149, 145, 165, 0.0196802);
+  }
+
+  &__txt {
+    padding: 0;
+    width: 100%;
+  }
+
+  &__desc {
+    z-index: 1;
+    white-space: break-spaces;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #495053;
+    margin: 64px 35px 9px 36px;
+  }
+
+  &__number {
+    position: absolute;
+    display: block;
+    font-weight: 700;
+    font-size: 192px;
+    color: #F2F1F5;
+    opacity: 0.6;
+    line-height: 140px;
+    right: 15px;
+    bottom: 0;
+    z-index: 0;
+  }
+
+
+  @media screen and (max-width: 1252px) {
+      &__car-techno-premier {
+        right: 0;
+      }
+  }
+
+  @media screen and (max-width: 1191px) {
+    &__box {
+      &:nth-child(2), &:nth-child(4){
+        &::after {
+          top: unset;
+          left: 0;
+          right: 0;
+          bottom: -31px;
+          display: block;
+          width: 31px;
+          height: 31px;
+          margin: auto;
+          background: url('~/images/right.png') center center no-repeat;
+          transform: rotate(90deg);
+          content: '';
+        }
+      }
+
+      &:nth-child(3){
+        &::after {
+          right: unset;
+          top: 0;
+          bottom: 0;
+          left: -31px;
+          display: block;
+          width: 31px;
+          height: 31px;
+          margin: auto;
+          background: url('~/images/right.png') center center no-repeat;
+          transform: rotate(180deg);
+          content: '';
+        }
+      }
+
+      &:nth-child(5){
+        grid-column-start: 1;
+        grid-row-start: 3;
+        &::after {
+          left: unset;
+          top: 0;
+          bottom: 0;
+          right: -31px;
+          display: block;
+          width: 31px;
+          height: 31px;
+          margin: auto;
+          background: url('~/images/right.png') center center no-repeat;
+          transform: rotate(0deg);
+          content: '';
+        }
+      }
+
+      &:nth-child(4) {
+        grid-column-start: 1;
+        grid-row-start: 2;
+      }
+
+      &:nth-child(6) {
+        grid-column-start: 2;
+        grid-row-start: 3;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1110px) {
+    &__title {
+      padding-left: 16px;
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 791px) {
+    &__box {
+      &:nth-child(1) {
+        &::after {
+          top: unset;
+          left: 0;
+          right: 0;
+          bottom: -31px;
+          display: block;
+          width: 31px;
+          height: 31px;
+          margin: auto;
+          background: url('~/images/right.png') center center no-repeat;
+          transform: rotate(90deg);
+          content: '';
+        }
+      }
+
+      &:nth-child(2) {
+        grid-column-start: 1;
+        grid-row-start: 2;
+      }
+
+      &:nth-child(3) {
+        &::after {
+          top: unset;
+          left: 0;
+          right: 0;
+          bottom: -31px;
+          display: block;
+          width: 31px;
+          height: 31px;
+          margin: auto;
+          background: url('~/images/right.png') center center no-repeat;
+          transform: rotate(90deg);
+          content: '';
+        }
+      }
+
+      &:nth-child(4) {
+        grid-column-start: 1;
+        grid-row-start: 4;
+      }
+
+      &:nth-child(5) {
+        grid-column-start: 1;
+        grid-row-start: 5;
+
+        &::after {
+          top: unset;
+          left: 0;
+          right: 0;
+          bottom: -31px;
+          display: block;
+          width: 31px;
+          height: 31px;
+          margin: auto;
+          background: url('~/images/right.png') center center no-repeat;
+          transform: rotate(90deg);
+          content: '';
+        }
+      }
+
+      &:nth-child(6) {
+        grid-column-start: 1;
+        grid-row-start: 6;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    &__block {
+      display: block;
+      justify-content: start;
+    }
+
+    &__desc {
+      margin: 64px 0 0 36px;
+    }
+
+    &__title {
+      width: 90%;
+      padding-top: 89px;
+    }
+
+    &__img-wrapper {
+      position: absolute;
+      width: 90%;
+    }
+
+    &__car-techno-premier {
+      right: 0px;
+      top: -254px;
+      max-width: 350px;
+      width: 100%;
+    }
+
+    &__list {
+      padding: 0;
+    }
+
+    &__box {
+      width: 90%;
+      margin: 0 16px;
+    }
+
+    &__box-lower {
+      font-size: 24px;
+    }
+
+    &__number {
+      right: 12px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    padding-bottom: 47px;
+
+    &__block {
+      height: 167px;
+    }
+
+    &__title {
+      position: relative;
+      padding-top: 49px;
+      top: 51px;
+      padding-left: 3px;
+      font-weight: 400;
+      font-size: 24px;
+    }
+
+    &__car-techno-premier {
+      position: relative;
+      left: -6px;
+      top: -186px;
+      max-width: 276px;
+      height: auto;
+    }
+
+    &__list {
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    &__box {
+      max-width: 288px;
+      margin: 0 16px 0 39px;
+
+      &:nth-child(1) > span {
+        max-width: 181px;
+      }
+
+      &:nth-child(2) > span {
+        max-width: 239px;
+        margin-top: 66px;
+      }
+
+      &:nth-child(3) > span {
+        max-width: 190px;
+        margin-top: 53px;
+      }
+
+      &:nth-child(5) > span {
+        max-width: 223px;
+        margin-top: 53px;
+      }
+
+      &:nth-child(6) > span {
+        max-width: 223px;
+        margin-top: 53px;
+      }
+      &:nth-child(1),&:nth-child(2),
+      &:nth-child(3),&:nth-child(4),
+      &:nth-child(5),&:nth-child(6){
+        &::after {
+          top: 154px;
+          right: 5px;
+        }
+      }
+    }
+
+    &__desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      margin: 72px 0 0 16px;
+      max-width: 228px;
+    }
+
+    &__box-lower {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 0;
+      width: 288px;
+      height: 161px;
+    }
+
+    &__txt {
+      position: relative;
+      margin: 0 2px;
+      top: 45px;
+      left: -2px;
+    }
+
+  }
+}
+
